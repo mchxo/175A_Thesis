@@ -1,0 +1,18 @@
+---
+title: "Rasters"
+output: html_document
+---
+
+```{r}
+require(raster)
+require(tidyverse)
+require(leaflet)
+getwd()
+```
+
+```{r}
+r10 = raster("MTBS_BSmosaics/mtbs_CA_2010.tif")
+
+hist(r10$mtbs_CA_2010)
+```
+
